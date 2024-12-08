@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nyan!
+title: First Post
 ---
 
-Nyan~
+:3
