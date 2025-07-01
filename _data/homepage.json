@@ -1,0 +1,27 @@
+{
+    "title": "Drikanis",
+    "subtitle": "Sofware Developer and Weird Internet Cat",
+    "menu": [
+        {
+            "title": "",
+            "entries": [
+                {
+                    "title": "about me",
+                    "url": "/about"
+                },
+                {
+                    "title": "github",
+                    "url": "https://github.com/drikanis"
+                },
+                {
+                    "title": "mastodon",
+                    "url": "https://mstdn.ca/@drikanis"
+                }
+            ]
+        },
+        {
+            "title": "all blog posts",
+            "post_list": "post"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<a href="/">{{ site.back_home_text }}</a>
+
+<header>
+    <h1>{{ title or homepage.title or site.title }}</h1>
+</header>
+<main>
+    <hr>
+    {{ content | safe  }}
+</main>

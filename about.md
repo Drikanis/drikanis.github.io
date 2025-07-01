@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-He/Him Aro GreyAce Software/DevOps engineer with only a few minor issues.
+He/They Aro GreyAce Software/DevOps engineer with only a few minor issues.
 
-### Contact me below!
+![grey cartoon kitty with green eyes](/images/pfp.png)
