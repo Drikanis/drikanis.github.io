@@ -67,6 +67,25 @@ a {
     color: #4183C4;
 }
 
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
 /* begin syntax highlighting */
 
 /**
