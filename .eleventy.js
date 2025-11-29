@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
@@ -11,6 +12,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy(".well-known");
     eleventyConfig.addPassthroughCopy("Drikanis.asc");
     eleventyConfig.addPlugin(syntaxHighlight);
+
+    eleventyConfig.addPlugin(pluginRss);
 
     eleventyConfig.addFilter("formatDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toISODate();

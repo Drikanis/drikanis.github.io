@@ -16,6 +16,10 @@
                 {
                     "title": "mastodon",
                     "url": "https://mstdn.ca/@drikanis"
+                },
+                {
+                    "title": "rss",
+                    "url": "/feed.xml"
                 }
             ]
         },
