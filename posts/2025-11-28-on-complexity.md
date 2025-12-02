@@ -1,5 +1,5 @@
 ---
-tags: post
+tags: post,industry
 layout: post
 title: On the Upper Limits of Complexity
 ---

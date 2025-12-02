@@ -1,5 +1,5 @@
 ---
-tags: post
+tags: post,industry
 layout: post
 title: LLMs and the AI Apocalypse
 ---
