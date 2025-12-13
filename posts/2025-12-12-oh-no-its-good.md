@@ -1,7 +1,7 @@
 ---
 tags: post,industry
 layout: post
-title: Oh no it's actually good at what it does
+title: Oh no it's actually decent
 ---
 
 So, I took some training from the corporate overlords recently. It was presented by one of the big tech companies and was about "Agentic AI".
