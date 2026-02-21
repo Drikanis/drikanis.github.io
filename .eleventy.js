@@ -1,8 +1,21 @@
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const slugify = require("slugify");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const markdownItAnchorOptions = {
+    level: [1, 2, 3],
+    slugify: (str) => 
+        slugify(str, {
+            lower: true,
+            strict: true,
+            remove: /["]/g,
+        }) ,
+    tabIndex: false,
+}
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
@@ -19,12 +32,24 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toISODate();
     });
 
+    eleventyConfig.addFilter("slug", (str) => {
+        if (!str) {
+            return;
+        }
+
+        return slugify(str, {
+            lower: true,
+            struct: true,
+            remove: /["]/g,
+        });
+    });
+
     let markdownOptions = {
         html: true,
         breaks: true,
         linkify: true
     };
-    let markdownLib = new markdownIt(markdownOptions);
+    let markdownLib = new markdownIt(markdownOptions).use(markdownItAnchor, markdownItAnchorOptions);
 
     //Add div around tables
     markdownLib.renderer.rules.table_open = () => '<div class="table-wrapper">\n<table>\n',
