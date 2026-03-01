@@ -88,7 +88,7 @@ Google still has full control over chromium, and by extension many of the things
 
 I personally use a self-hosted SearXNG instance, which is a search aggregator that will hit multiple search engines with your query and return the results in a single list with no ads.
 
-A very good alternative if you don't want to self-host is Duck Duck Go, specifically the (no-AI version)[https://noai.duckduckgo.com/]. It disables "AI-summary" widgets and tries its best to remove AI-generated images from the image search.
+A very good alternative if you don't want to self-host is Duck Duck Go, specifically the [no-AI version](https://noai.duckduckgo.com/). It disables "AI-summary" widgets and tries its best to remove AI-generated images from the image search.
 
 # Twitter/X
 
