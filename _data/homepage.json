@@ -10,12 +10,16 @@
                     "url": "/about"
                 },
                 {
-                    "title": "github",
-                    "url": "https://github.com/drikanis"
-                },
-                {
                     "title": "mastodon",
                     "url": "https://mstdn.ca/@drikanis"
+                },
+                {
+                    "title": "codeberg",
+                    "url": "https://codeberg.org/drikanis"
+                },
+                {
+                    "title": "github",
+                    "url": "https://github.com/drikanis"
                 },
                 {
                     "title": "rss",
